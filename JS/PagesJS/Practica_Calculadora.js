@@ -19,9 +19,10 @@ console.log("Funcionando realizarSuma")
 
 let numero1 = document.getElementById(`numero1`).value;
 let numero2 = document.getElementById(`numero2`).value;
-let suma = numero1 + numero2;
-resultado = document.getElementById("resultado").innerHTML = `${suma}`
+let suma = parseInt(numero1) + parseInt(numero2);
+document.getElementById("resultado").innerText = `${suma}`
 
+// ls crea variable, lo crea objeto
 console.log(numero1);
 console.log(numero2);
 console.log(suma)
