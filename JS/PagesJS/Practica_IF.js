@@ -78,6 +78,18 @@ function calcularDescuento() {
     }
 }
 
+function verificarMayorMenor() {
+    let edad = document.getElementById('edadSimple').value;
+    let edad1 = parseInt(edad);
+    console.log(edad1)
+
+    if (edad1 >= 18) {
+        document.getElementById('mensajeEdadSimple').innerText = `Eres mayor de edad, ya que tienes:  ${edad1} años`;
+    
+    } else {
+       document.getElementById('mensajeEdadSimple').innerText = `No eres mayor de edad, ya que tienes solamente:  ${edad1} años`
+    }
+}
 
 //parse int
 //parseFloat decimales
