@@ -70,7 +70,7 @@ function calcularDescuento() {
    
     if (numeroconvertido >= 100) {
        
-        document.getElementById('mensajeDescuento').innerText = `Felicidades, tu monto de compra es igual a ${numeroconvertido} y tienes un descuento de: ${num1}`;
+        document.getElementById('mensajeDescuento').innerText = `Felicidades, tu monto de compra es igual a ${numeroconvertido} y tienes un descuento de: ${num1}, asi que pagas solamente ${numeroconvertido - num1}`;
     
     } else {
         
