@@ -70,7 +70,7 @@ function calcularDescuento() {
    
     if (numeroconvertido >= 100) {
        
-        document.getElementById('mensajeDescuento').innerText = `Felicidades, tu monto de compra es igual a ${numeroconvertido} y tienes un descuento de: ${num1}, asi que pagas solamente ${numeroconvertido - num1}`;
+        document.getElementById('mensajeDescuento').innerText = `Felicidades, tu monto de compra es gual a ${numeroconvertido} y tienes un descuento de: ${num1}, asi que pagas solamente ${numeroconvertido - num1}`;
     
     } else {
         
@@ -80,7 +80,7 @@ function calcularDescuento() {
 
 function verificarMayorMenor() {
     let edad = document.getElementById('edadSimple').value;
-    let edad1 = parseInt(edad);
+    let edad1 = parseInt(edad); //variable extra
     console.log(edad1)
 
     if (edad1 >= 18) {
