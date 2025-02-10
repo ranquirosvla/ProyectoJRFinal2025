@@ -93,13 +93,64 @@ function primeraPersonaActiva() {
 
 }
 
-function personasActivas() {
-    let resultado = document.getElementById('listaActivos');
+function primeraMayorDeEdad() {
+    let resultado = document.getElementById('resultadoMayor');//inner 
+    let busqueda = personas.find(x=> x.edad >= 18);
 
-    personas.forEach(element => {
+   //personas.forEach(element => {
+      //if (element.edad >= 18) {
+        //resultado.innerHTML += `
+        //nombre: ${element.nombre}  edad: ${element.edad}`
+       
+    //}
+
+
+  if (busqueda) {
+   resultado.innerHTML = `primera persona encontrada ${busqueda.nombre} ${busqueda.edad}`
+
+  } else {
+   resultado.innerHTML = `No se encontro nadie activo `
+  }
+}
+
+function mostrarTodasLasPersonas() {
+  let listaTotal = document.getElementById('listaPersonas');
+  
+  personas.forEach(element => {
+    listaTotal.innerHTML += `
+          
+    <li>nombre : ${element.nombre} edad: ${element.edad} activo: ${element.activo}</li>`
+  }
+
+  )
+
+}
+
+function mayoresDeEdad() {
+  let resultado = document.getElementById('listaMayores');
+  
+  personas.forEach(element => {
         
-        if (element.activo == true) {
-            
+    if (element.edad >= 18) {
+        
+      resultado.innerHTML += `
+      
+        <li>nombre : ${element.nombre} edad: ${element.edad}</li>`
+      
+        
+    }
+
+});
+}
+
+function personasActivas() {
+    let resultado = document.getElementById('listaActivos');//Tomamos el ID que luego usaremos para desplegar la info en el HTML
+
+    //Recorremos el arreglo personas con el forEach
+    personas.forEach(element => {//la palabra element es o contiene el elemento de cada posision del arreglo
+        
+        if (element.activo == true) {//si el componente llamado acivo dentro de cada posision es verdadero
+          //entonces inserta el componente llamado nombre de cada posision en una lista 
           resultado.innerHTML += `
           
             <li>nombre : ${element.nombre} </li>`
