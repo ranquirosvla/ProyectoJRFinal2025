@@ -14,7 +14,7 @@ let contenedor = document.getElementById('tbody');
 DatosFiltrados = Datos_Locales;
 
 //aela
-document.addEventListener('type', () => {
+document.addEventListener('DOMContentLoaded', () => {
     Mostrar_CampoTabla()
 });
 
@@ -28,6 +28,7 @@ function Mostrar_CampoTabla() {
     DatosFiltrados.forEach(element => {
         //mostramos datos en consola
         console.log(element)
+        
         //tomamos los datos y los almacenamos en la variable html
         html +=`
             <tr>
