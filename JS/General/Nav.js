@@ -15,7 +15,7 @@ let Contenedo_IdNav = document.getElementById('IdNav');  //ls //gi
 
 Contenedo_IdNav.innerHTML = 
 `
- <a class="navbar-brand" href="#">App Store </a>
+ <a class="navbar-brand" href= ""><img src="Assets/logo.jpg" class="w-25 h-25 rounded" alt=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@ Contenedo_IdNav.innerHTML =
             </ul>
           
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Suerte">
+                <button class="btn btn-outline-primary my-2 my-sm-0 border border-white text-white" type="submit">Buscar</button>
             </form>
         </div>
 `;

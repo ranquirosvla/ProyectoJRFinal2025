@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Inicio</title>
+    <title>Pesca</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,20 +23,21 @@
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
 
     <!-- Inicio: Navbar  100% -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="IdNav"> </nav>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary" id="IdNav"> </nav>
     <!-- Fin: Navbar  -->   
     
 
 
     <!-- Inicio: Container 90% -->
     <div class="container">
-
-
+    <br>
+    <h1>Vamos a Pescar</h1>
         <!-- Inicio: Header  -->
         <header id="Header" class="mb-5 mt-5"></header>
         <!-- Fin: Header  -->
@@ -44,16 +45,15 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
-            <div class="form-group">
-                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Pokémon..." onkeyup="Buscar_Pokemon()">
-            </div>
-            <button type="button" onclick="Mostrar_UnPokemon()" class="btn btn-secondary">Mostrar un pokemon</button>
-
-            <button type="submit" onclick="Mostrar_TodosPokemon()" class="btn btn-secondary">Mostrar Todos</button>
+        
+              <!-- Inicio: section  1 Testimonios  -->
+              <section id="Testimonios" class="Testimonios mt-5"></section>
+              <!-- Fin: section 1 -->
+  
+              <!-- Inicio: section 2 Articulos -->
+              <section id="Pesca" class="Pesca mt-5"></section>
+              <!-- Fin: section  2-->          
             
-            
-            <div id="IdMostrarPokemon" class="row"></div>
-
         </main>
         <!-- Fin: Main  -->
     </div>
@@ -67,15 +67,15 @@
 
 
 
- 
+   
     <!-- Scripts General  -->
     <script type="module" src="JS/General/Nav.js"></script>
     <script type="module" src="JS/General/Footer.js"></script>
     <script type="module" src="JS/General/Header.js"></script>
    
    <!-- Scripts de la Pagina   -->
-    
-    <script src="JS/PagesJS/API_VerUsuario.js"></script>
+    <script src="JS/PagesJS/Pesca.js"></script>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

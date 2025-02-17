@@ -1,7 +1,7 @@
 
 :root{
-  --fondogradiante:linear-gradient(to bottom, #dd2476, #ff512f);  
-  --colorglobal:#dd2476;
+  --fondogradiante:linear-gradient(to bottom, #248add, #4b59a9);  
+  --colorglobal:#248add;
   --TextClaro: white;
 
 }
@@ -10,11 +10,22 @@ body{
     font-family: "Titillium Web", sans-serif;
 }
 
+.nav-link{
+    color: var(--colorglobal);
+}
+
+h1{
+    text-align: center;
+    color: var(--colorglobal);
+}
 main{
 
     height: auto !important;
     height: 100%;
     min-height: 80vh;
+}
+main p{
+    color: var(--colorglobal);
 }
 header{
     background: var(--colorglobal);
@@ -38,3 +49,4 @@ footer{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+

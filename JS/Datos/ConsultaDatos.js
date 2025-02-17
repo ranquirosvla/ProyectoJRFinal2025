@@ -21,10 +21,10 @@ export let Datos_LiNav = [
         Activo: false
     },
     {   Id: 3,
-        Nombre: "Listado Clientes", 
+        Nombre: "API_Listado_Clientes", 
         Detalle: "Practica",     
         Url: "/Practica_Listado_Clientes.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 4,
         Nombre: "Tarea Pokemon",   
@@ -45,22 +45,22 @@ export let Datos_LiNav = [
         Activo: false
     },
     {   Id: 8,
-        Nombre: "API_Listado_Cliente",    
+        Nombre: "Pesca",    
         Detalle: "Proyecto", 
-        Url: "/API_Listado_Clientes.html",
+        Url: "/Pesca.html",
         Activo: true
     },
     {   Id: 9,
-        Nombre: "API_VerUsuario",    
+        Nombre: "Transporte",    
         Detalle: "Proyecto", 
-        Url: "/API_VerUsuario.html",
-        Activo: false
+        Url: "/Transporte.html",
+        Activo: true
     },
     {   Id: 10,
-        Nombre: "API_Contacto",    
+        Nombre: "Contacto",    
         Detalle: "Proyecto", 
-        Url: "/API_Contacto.html",
-        Activo: false
+        Url: "/Contacto.html",
+        Activo: true
     },
     {   Id: 11,
         Nombre: "Practica IF",    
