@@ -74,6 +74,13 @@ export let Datos_LiNav = [
         Url: "/Practica_CICLO.html",
         Activo: false
     },
+    {
+        Id: 13,  
+        Nombre: "Punto Extra",  
+        Detalle: "Puntos Extra",  
+        Url: "/puntoextra.html",  
+        Activo: true  
+    }
 ];
 
 export let urlCompleta = window.location.href; // Obtiene la URL completa
